@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Bookings</title>
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<body>
+
+<h2 align="center">
+Booked Tickets
+</h2>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+
+<th>Customer Name</th>
+
+<th>Email</th>
+
+<th>Movie</th>
+
+<th>Seats</th>
+
+<th>Booking Date</th>
+
+</tr>
+
+{% for row in bookings %}
+
+<tr>
+
+<td>{{row[0]}}</td>
+
+<td>{{row[1]}}</td>
+
+<td>{{row[2]}}</td>
+
+<td>{{row[3]}}</td>
+
+<td>{{row[4]}}</td>
+
+<td>{{row[5]}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+</body>
+
+</html>

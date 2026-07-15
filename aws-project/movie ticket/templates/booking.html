@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking</title>
+
+<link rel="stylesheet"
+href="{{url_for('static',filename='style.css')}}">
+
+</head>
+
+<body>
+
+<div class="form">
+
+<h2>Book Movie Ticket</h2>
+
+<form method="POST">
+
+<input type="text"
+name="customer_name"
+placeholder="Customer Name"
+required>
+
+<input type="email"
+name="email"
+placeholder="Email"
+required>
+
+<select name="movie_name">
+
+<option>Avengers Endgame</option>
+
+<option>Avatar 2</option>
+
+<option>KGF Chapter 2</option>
+
+<option>Pushpa 2</option>
+
+<option>Leo</option>
+
+</select>
+
+<input type="number"
+name="seats"
+placeholder="Seats"
+required>
+
+<input type="date"
+name="booking_date"
+required>
+
+<button type="submit">
+Book Ticket
+</button>
+
+</form>
+
+<br>
+
+<a href="/bookings">
+View Bookings
+</a>
+
+</div>
+
+</body>
+</html>
